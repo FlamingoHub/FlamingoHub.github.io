@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html> 
+  <link rel= "stylesheet" href="CreateProfile.css">
+  
+  <meta charset="UTF-8">
+  <script defer src= "Createprofile.js"></script>
+
+  <div class="TopNavigation">
+    <a href="index.htm">Homepage </a>
+    <a href="FlamingoFacts.htm">Facts</a>
+    <a href="FlamingoRunIndex.htm">FlamingoRun</a>
+    <a href="MadeBy.htm">MadeBy</a>
+    <a href="Merch.htm">Merch</a>
+    <a class="active" href="CreateProfile.htm">Sign up</a>        
+
+  
+   </div>
+ 
+  </head>
+  <body> 
+    <div id="error"></div>
+<form id="form" action="CreateProfile.php" method="post">
+
+
+  <div>
+    <label for="Username">Username</label>
+    <input id="Username" name="Username" type="Username" required>
+  </div>
+  <div>
+    <label for="Email">Email</label>
+    <input id="Email" name="Email" type="Email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+  </div>
+  <div>
+    <label for="RepeatPassword">Repeat password</label>
+    <input id="RepeatPassword" name="RepeatPassword" type="RepeatPassword">
+  </div>
+
+  
+  <button id = "CreateButton" type="submit">Submit</button>
+ 
+</form>
+    
+    
+<div id = "ConfirmMail"> 
+ 
+  
+</div>
+
+</body>
+
+
+</html>
+<style>
+    .TopNavigation {
+    background-color: black;
+    overflow: hidden;
+}
+
+.TopNavigation a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.TopNavigation a:hover{
+background-color: #ddd;
+color: black;
+
+}
+
+
+
+.TopNavigation a.active{
+
+    background-color: #04AA6D;
+    color: white;
+}
+</style>
