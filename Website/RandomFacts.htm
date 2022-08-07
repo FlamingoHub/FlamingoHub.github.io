@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" href="ProfileCard.css">
+        <div id ="card" class="card">
+  <img src="Assets/Flamingo1.jpg" alt="John" style="width:100%">
+  
+  <h1>Flamingo Facts</h1>
+ 
+ 
+  
+</div>
+</head>
+
+<body>
+   
+</body>
+
+<script>
+    document.getElementById("card").innerHTML += ChooseFromList();
+    function ChooseFromList () {
+        const flamingolist = [
+
+        "What is a Flamingo?: A flamingo is a large, tall bird with long legs and a long neck. Their feathers are pink or red, and they have a curved beak.",
+        "Where do Flamingos live?: Flamingos live in warm climates near water. They can be found in Africa, South America, and the Caribbean.",
+        "What do Flamingos eat?:Flamingos eat mostly shrimp, crabs, and other small aquatic animals. They use their beaks to filter food out of the water.",
+        "How do Flamingos stand on one leg?:Flamingos often stand on one leg to help them conserve body heat.",
+        "How long do Flamingos live?:Flamingos typically live for 20-30 years in the wild. ",
+        "What are baby Flamingos called?:Baby Flamingos are called chicks.",
+        "What is the biggest threat to Flamingos?:The biggest threat to Flamingos is habitat loss. Flamingos need wetland habitats to survive, and these habitats are being destroyed by humans. ",
+
+        ]
+
+        return flamingolist[getRndInteger(0,flamingolist.length)];
+        
+        
+
+    }
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+    }
+
+</script>
+</html>

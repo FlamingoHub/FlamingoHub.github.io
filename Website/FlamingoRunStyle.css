@@ -1,0 +1,90 @@
+.game {
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url(Assets/FlamingoNewBackground.png);
+  background-size: 100% 600px;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(Assets/MaybeAnActualPNG.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 450px;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 440px;
+  }
+
+  30% {
+    top: 400px;
+  }
+
+  50% {
+    top: 370px;
+  }
+
+  80% {
+    top: 400px;
+  }
+
+  100% {
+    top: 440px;
+  }
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 425px;
+  left: 1920px;
+
+  background-image: url("Assets/cactus.png");
+  background-size: 20px 40px;
+
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 1920px;
+  }
+
+  100% {
+    left: -10px;
+  }
+}
+
+#Navigation {
+  background-color:gray; 
+  color:white; 
+  height: 20%;
+  width: 100%;
+  border: 3px solid black ;
+  text-align: center;
+  outline: none;
+  top: 20px;
+  align-self: top;
+ text-decoration: none;
+}
+
+
+body{
+
+  background-color: pink;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
