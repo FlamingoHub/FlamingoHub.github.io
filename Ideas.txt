@@ -1,0 +1,18 @@
+Flanking Regler:
+
+
+
+hver dag kl 23:59 får alle X antal actions, med disse actions kan de gøre følgende ting:
+
+Rykke,
+Angribe,
+Lvl up,
+give deres actions til andre.
+
+spillet er spillet på på en 2d grid.
+
+
+X antal actions per dag
+
+Hver spiller har som start 5 liv.
+Og en range på 1 i alle retninger(dette tælder diagonalt)
