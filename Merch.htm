@@ -1,48 +1,70 @@
- <!DOCTYPE html>
-<html> 
-  <link rel= "stylesheet" href="MadeBy.css">
-  <head>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NTh1nk</title>
+    
+    <title>FlamingoHubs Homepage</title>
     <div class="TopNavigation">
-      <a href="index.htm">Homepage </a>
+     
+     <a href="index.htm">Homepage </a>
       <a href="FlamingoFacts.htm">Facts</a>
       <a href="FlamingoRunIndex.htm">FlamingoRun</a>
       <a href="MadeBy.htm">MadeBy</a>
-      <a class="active" href="Merch.htm">Merch</a>
+       <a class="active" href="Merch.htm">Merch</a>
       <a href="CreateProfile.htm">Sign up</a>       
     
      </div>
- 
-  </head>
- 
-  <body>
-    <link rel= "stylesheet" href="Merch.css">
-
-    <div id = "Cups" style = "float: center;" >
-        <img src="Assets/FlamingoHubCup.png" height="30%" width="30%">
-        <img src="Assets/FlamingoHubCup2.png" height="30%" width="30%">
-    
-    </div>
-   
-    <div id = "ShirtsAndBadges" style="float: center;"> 
-        <img src="Assets/FlamingoHubBadge.png" height="30%" width="30%">
-        <img src="Assets/FlamingoHubHoodie.png" height="30%" width="30%">
-    
-    </div>
-
+</head>
+<body>
+    <main>
+        <section class="no-parallax">
+          <h1>In FlamingoHub we trust</h1>
+        </section>
+        <section class="parallax bg">
+          <h1> FlamingoHub is a passion project all about flamingoes, it serves the purpose of protecting animals. This site also serves as a source for flamingo facts. Flamingohub is currently still in development, and more features will be added later, that might include but not limited to: a live chatting system, a news dashbord, profile system, video uploading and so much more.
+            Currently you are able to read about flamingoes, play FlamingoRun, buy merch and enjoy daily flamingo facts at the bottom of this page.      </strong>
+          </h1>
+        </section>
+        <section class="no-parallax">
+         
     <div id="Buyhere">
-    <form action="https://flamingohub.creator-spring.com/">
-        <button class="button">Buy here </button>
+        <form action="https://flamingohub.creator-spring.com/">
+            <button class="button">Buy here </button>
+            </form>
+            
         </form>
-        
-    </form>
-    </div>
-   
-  </body>
+        </div>
+        </section>
+      </main>
+
+</body>
 </html>
 
+
 <style>
-  .TopNavigation {
+    body {
+  margin: 0;
+}
+
+
+
+
+html {
+   
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.TopNavigation {
     background-color: black;
     overflow: hidden;
 }
@@ -62,16 +84,6 @@ background-color: #ddd;
 color: black;
 
 }
-#Cups{
-  text-align: center;
-}
-#ShirtsAndBadges{
-  text-align: center;
-}
-
-#Buyhere{
-text-align: center;
-}
 
 
 
@@ -80,4 +92,94 @@ text-align: center;
     background-color: #04AA6D;
     color: white;
 }
+
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.no-parallax {
+  background-color: palevioletred;
+  z-index: 999;
+  color: black;
+  height: 40vh;
+}
+
+section h1 {
+  text-align: center;
+  font-size: small;
+  font-family: sans-serif;
+}
+
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Assets/FlamingoHubHoodie.png");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  section h1 {
+    font-size: xx-large;
+  }
+  .parallax h1 {
+    font-size: xx-large;
+  }
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
 </style>
+

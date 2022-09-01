@@ -2,7 +2,7 @@
 <html> 
     <link rel= "stylesheet" href="Homepage.css">
   <head>
-   
+    <title>FlamingoHubs Homepage</title>
     <div class="TopNavigation">
       <a class="active"
       href="index.htm">Homepage </a>
@@ -50,7 +50,19 @@
     <img src="Assets/Flamingo1.jpg" alt="John" style="width:100%">
             
      <p> Fact of the day:</p>
-    </div>  
+    </div>
+    <main>
+        <section class="no-parallax">
+          <h1>In FlamingoHub we trust</h1>
+        </section>
+        <section class="parallax bg">
+          <h1>      
+          </h1>
+        </section>
+        <section class="no-parallax">
+          <h1>FlamingoHubDeluxe@gmail.com</h1>
+        </section>
+      </main>  
   </body>
   <script>
  document.getElementById("card").innerHTML += ChooseFromList();
@@ -111,4 +123,68 @@ color: black;
     background-color: #04AA6D;
     color: white;
 }
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.no-parallax {
+  background-color: palevioletred;
+  z-index: 999;
+  color: black;
+  height: 40vh;
+}
+
+section h1 {
+  text-align: center;
+  font-size: small;
+  font-family: sans-serif;
+}
+
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Assets/FlamingoZoo.png");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  section h1 {
+    font-size: xx-large;
+  }
+  .parallax h1 {
+    font-size: xx-large;
+  }
+}
+
 </style>
